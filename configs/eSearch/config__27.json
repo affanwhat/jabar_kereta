@@ -1,0 +1,215 @@
+{
+  "layers": [
+    {
+      "name": "Ibukota",
+      "url": "https://satupeta.jabarprov.go.id/arcgis/rest/services/perangkat_daerah/DBMPR/MapServer/289",
+      "definitionexpression": "",
+      "spatialsearchlayer": false,
+      "export2Csv": false,
+      "export2Geo": false,
+      "export2FC": false,
+      "zoomScale": 10000,
+      "forceZoomScale": false,
+      "shareResult": false,
+      "addToAttrib": false,
+      "expressions": [
+        {
+          "alias": "Ibukota",
+          "textsearchlabel": "Ibukota",
+          "values": [
+            {
+              "fieldObj": {
+                "name": "DESKRIPSI",
+                "label": "Nama Kabupaten/Kota",
+                "shortType": "string",
+                "type": "esriFieldTypeString"
+              },
+              "valueObj": {
+                "value": ""
+              },
+              "prompt": "Cari Ibukota",
+              "textsearchhint": "(Nama Kabupaten/Kota)",
+              "sqltext": "Upper(DESKRIPSI) = Upper('[value]')",
+              "operation": "stringOperatorIs"
+            }
+          ]
+        }
+      ],
+      "titlefield": "LOKASI",
+      "fields": {
+        "all": false,
+        "field": [
+          {
+            "name": "DESKRIPSI",
+            "alias": "Nama Kabupaten/Kota"
+          },
+          {
+            "name": "LOKASI",
+            "alias": "Lokasi Ibukota Kabupaten/Kota"
+          }
+        ]
+      },
+      "links": [],
+      "relates": [],
+      "orderByFields": [],
+      "showattachments": false,
+      "autozoomtoresults": false,
+      "layersymbolfrom": "server"
+    }
+  ],
+  "bufferDefaults": {
+    "autoZoom": true,
+    "addtolegend": true,
+    "bufferUnits": {
+      "bufferUnit": [
+        {
+          "name": "UNIT_FOOT",
+          "label": "Feet"
+        },
+        {
+          "name": "UNIT_STATUTE_MILE",
+          "label": "Miles"
+        },
+        {
+          "name": "UNIT_METER",
+          "label": "Meter"
+        }
+      ]
+    },
+    "bufferDefaultValue": 5,
+    "bufferWKID": 102003,
+    "simplefillsymbol": {
+      "color": [
+        1,
+        185,
+        253,
+        128
+      ],
+      "outline": {
+        "color": [
+          1,
+          185,
+          253,
+          204
+        ],
+        "width": 0.75,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "spatialrelationships": {
+    "spatialrelationship": [
+      {
+        "name": "esriSpatialRelContains",
+        "label": "entirely contained in"
+      },
+      {
+        "name": "esriSpatialRelIntersects",
+        "label": "intersected by"
+      },
+      {
+        "name": "esriSpatialRelEnvelopeIntersects",
+        "label": "intersected by envelope of"
+      }
+    ]
+  },
+  "graphicalsearchoptions": {
+    "enablepointselect": true,
+    "enablelineselect": true,
+    "enablepolylineselect": true,
+    "enableextentselect": true,
+    "enablecircleselect": true,
+    "enablepolyselect": true,
+    "showmultigraphicsgraphicaloption": true,
+    "showaddtolerancegraphicaloption": true,
+    "showaddsqltextgraphicaloption": true,
+    "showbuffergraphicaloption": true,
+    "buffercheckedbydefaultgraphicaloption": false,
+    "multipartgraphicsearchchecked": false,
+    "addpointtolerancechecked": false,
+    "keepgraphicalsearchenabled": true
+  },
+  "symbols": {
+    "simplemarkersymbol": null,
+    "picturemarkersymbol": {
+      "url": "images/i_search.png",
+      "height": "20",
+      "width": "20",
+      "type": "esriPMS",
+      "angle": "0"
+    },
+    "simplelinesymbol": {
+      "type": "esriSLS",
+      "style": "esriSLSSolid",
+      "color": [
+        255,
+        0,
+        0,
+        204
+      ],
+      "width": 2
+    },
+    "simplefillsymbol": {
+      "color": [
+        255,
+        0,
+        0,
+        128
+      ],
+      "outline": {
+        "color": [
+          255,
+          0,
+          0,
+          204
+        ],
+        "width": 2,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "resultFormat": {
+    "attTitlesymbol": {
+      "bold": false,
+      "italic": true,
+      "underline": false,
+      "color": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "attValuesymbol": {
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  },
+  "initialView": "text",
+  "selectAttachmentView": "image",
+  "selectfilter": "contains",
+  "enablePopupsOnResultClick": true,
+  "disablePopups": false,
+  "disableuvcache": false,
+  "exportsearchurlchecked": false,
+  "limitsearch2mapextentchecked": false,
+  "autozoomtoresults": true,
+  "mouseovergraphics": false,
+  "mouseoverlist": false,
+  "datedisplayformat": "d MMM yyyy",
+  "zoomFactor": 0.9,
+  "containsword": false
+}
